@@ -7,8 +7,8 @@ pwd
 repos=$(gh repo list --no-archived --json name | jq -r '.[].name')
 for repo in $repos
 do
-    echo "Fetching $repo"
+    echo "Pulling $repo"
     cd $repo
-    git fetch
+    git pull
     cd ..
 done
