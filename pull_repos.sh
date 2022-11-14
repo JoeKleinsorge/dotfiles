@@ -7,8 +7,11 @@ pwd
 repos=$(gh repo list --no-archived --json name | jq -r '.[].name')
 for repo in $repos
 do
-    echo "Pulling $repo"
-    cd $repo
-    git pull
-    cd ..
+    # If repo already exists, pull latest changes
+    if [ -d "$repo" ]; then
+        echo "Pulling latest changes for $repo"
+        cd $repo
+        git pull
+        cd ..
+    fi
 done
