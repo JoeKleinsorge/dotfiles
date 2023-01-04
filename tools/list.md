@@ -21,6 +21,7 @@ tailscale
 yt-dlp
 zsh
 zoom
+lunarvim
 
 ---
 https://remmina.org/
