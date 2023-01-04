@@ -1,3 +1,26 @@
 exa
 bat
+duf
+firefox
+kitty
+ansible
+kubectl
+calibre
+barrier
+golang
+GSConnect
+podman
+tweaks
+python3
+hugo
+hack-fonts
+neovim
+pre-commit
+spotify
+tailscale
+yt-dlp
+zsh
+zoom
 
+---
+https://remmina.org/
