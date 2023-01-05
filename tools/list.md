@@ -22,6 +22,8 @@ yt-dlp
 zsh
 zoom
 lunarvim
+zsh-syntax-highlighting
+zsh-autosuggestions
 
 ---
 https://remmina.org/

@@ -3,7 +3,6 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-source $ZSH/oh-my-zsh.sh
 
 # =======================================
 plugins=(
@@ -39,4 +38,9 @@ alias k="kubectl"
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+
+eval "$(starship init zsh)"
+
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+source $ZSH/oh-my-zsh.sh
+source /home/joe/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
