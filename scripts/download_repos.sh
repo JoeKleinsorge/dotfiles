@@ -9,4 +9,5 @@ for repo in $repos
 do
     echo "cloning $repo"
     gh repo clone $repo
+    pre-commit
 done
