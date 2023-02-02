@@ -2,7 +2,7 @@
 .PHONY: *
 
 
-default: mac, terminal
+default: mac, terminal, github
 
 fedora: make -C fedora
 
@@ -11,3 +11,6 @@ mac:
 
 terminal:
 	sh ./terminal/link.sh
+
+github:
+	sh ./github/download_repos.sh
