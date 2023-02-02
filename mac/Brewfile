@@ -1,0 +1,51 @@
+# Arguments
+cask_args appdir: '/Applications'
+
+# Taps
+tap 'homebrew/bundle' || true
+tap 'homebrew/cask' || true
+tap 'homebrew/core' || true
+tap "homebrew/cask-drivers" || true
+tap "homebrew/cask-fonts" || true
+tap "homebrew/cask-versions" || true
+
+# Brews
+brew 'ansible'
+brew 'bat'
+brew 'coreutils'
+brew 'docker'
+brew 'duf'
+brew 'exa'
+brew 'fzf'
+brew 'gh'
+brew 'git'
+brew 'go'
+brew 'kubernetes-cli'
+brew 'lima'
+brew 'neovim'
+brew 'pre-commit'
+brew 'python'
+brew 'ripgrep'
+brew 'starship'
+brew 'tailscale'
+brew 'terraform'
+brew 'tree'
+brew 'wget'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+
+# Casks
+cask 'barrier'
+cask 'calibre'
+cask 'firefox'
+cask "font-fira-code"
+cask "font-hack"
+cask 'google-chrome'
+cask 'kitty'
+cask 'postman'
+cask 'powershell'
+cask 'spotify'
+cask 'rectangle'
+cask 'visual-studio-code'
+cask 'zoom'
+
