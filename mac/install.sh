@@ -8,3 +8,5 @@ brew tap Homebrew/bundle
 
 # Install Homebrew packages
 brew bundle --file=~/git/dotfiles/mac/Brewfile
+
+
