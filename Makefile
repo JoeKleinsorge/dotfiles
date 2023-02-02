@@ -5,7 +5,7 @@
 default: mac, terminal, github
 
 fedora: make -C fedora
-
+ 
 mac: 
 	sh ./mac/install.sh
 
