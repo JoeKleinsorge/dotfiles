@@ -17,17 +17,17 @@ do
         # If repo doesn't exist, clone it
         echo "cloning $repo"
         gh repo clone $repo
-
+    fi
+    
         # Check if repo has a pre-commit hook
-        if [ ! -f "$repo/.pre-commit-config.yaml" ]
-        then
-            echo "No pre-commit hook for $repo"
-            continue
-        else
-            cd $repo
-            # Install pre-commit hooks
-            echo "Installing pre-commit hooks for $repo"
-            pre-commit install
-        fi
+    if [ ! -f "$repo/.pre-commit-config.yaml" ]
+    then
+        echo "No pre-commit hook for $repo"
+        continue
+    else
+        cd $repo
+        # Install pre-commit hooks
+        echo "Installing pre-commit hooks for $repo"
+        pre-commit install
     fi
 done
