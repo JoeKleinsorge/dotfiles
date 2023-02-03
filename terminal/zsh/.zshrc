@@ -1,17 +1,22 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
+# Source +==============================
+source $ZSH/oh-my-zsh.sh
+source /home/joe/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Theme =================================
 ZSH_THEME="robbyrussell"
 
 
-# =======================================
+# Plugins ================================
 plugins=(
 	git
-	oc
 	kubelet
 )
 
-# =======================================
+# Alias +=================================
+
 alias cp='cp -v -i'
 alias rm='rm -i'
 alias mv='mv -i'
@@ -42,5 +47,3 @@ alias k="kubectl"
 eval "$(starship init zsh)"
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
-source $ZSH/oh-my-zsh.sh
-source /home/joe/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
