@@ -21,9 +21,6 @@ if test ! $(which zsh); then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-# Set MacOS defaults
-cp ~/git/dotfiles/mac/.macos ~/
-
 # Check if GH CLI auth is set
 if test ! $(gh auth status); then
     echo "Setting up GH CLI auth..."
