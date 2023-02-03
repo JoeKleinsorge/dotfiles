@@ -29,6 +29,6 @@ do
         # Install pre-commit hooks
         echo "Installing pre-commit hooks for $repo"
         pre-commit install
-        cd ..
+	cd ..
     fi
 done

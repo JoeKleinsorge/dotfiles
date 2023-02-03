@@ -13,6 +13,9 @@ ZSH_THEME="robbyrussell"
 plugins=(
 	git
 	kubelet
+ 	zsh-syntax-highlighting
+ 	zsh-autosuggestions
+ 	zsh-completions
 )
 
 # Alias +=================================
@@ -47,3 +50,9 @@ alias k="kubectl"
 eval "$(starship init zsh)"
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+<<<<<<< HEAD
+=======
+autoload -U compinit && compinit
+source $ZSH/oh-my-zsh.sh
+source /home/joe/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+>>>>>>> d8bff57 (ci)

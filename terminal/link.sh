@@ -2,7 +2,7 @@
 
 # Symlink dotfiles
 ## ZSH
-xln -s ~/git/dotfiles/base/zsh/.zshrc ~/.zshrc
+ln -s ~/git/dotfiles/base/zsh/.zshrc ~/.zshrc
 ln -s ~/git/dotfiles/base/kitty/.zshenv ~/.zshenv
 
 ## Kitty
