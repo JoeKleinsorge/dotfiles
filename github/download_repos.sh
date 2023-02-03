@@ -18,7 +18,7 @@ do
         echo "cloning $repo"
         gh repo clone $repo
     fi
-    
+
         # Check if repo has a pre-commit hook
     if [ ! -f "$repo/.pre-commit-config.yaml" ]
     then
@@ -29,5 +29,6 @@ do
         # Install pre-commit hooks
         echo "Installing pre-commit hooks for $repo"
         pre-commit install
+        cd ..
     fi
 done
