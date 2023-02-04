@@ -8,7 +8,6 @@ source /home/joe/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Theme =================================
 ZSH_THEME="robbyrussell"
 
-
 # Plugins ================================
 plugins=(
 	git
@@ -19,7 +18,6 @@ plugins=(
 )
 
 # Alias +=================================
-
 alias cp='cp -v -i'
 alias rm='rm -i'
 alias mv='mv -i'
@@ -41,7 +39,6 @@ alias nivm="nvim"
 alias n="nvim"
 alias py="python3"
 alias k="kubectl"
-
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
