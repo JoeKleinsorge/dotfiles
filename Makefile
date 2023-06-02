@@ -2,10 +2,8 @@
 .PHONY: *
 
 
-default: mac, terminal, github
+default: mac terminal github
 
-fedora: make -C fedora
- 
 mac: 
 	sh ./mac/install.sh
 	sh ./mac/set-defaults.sh
