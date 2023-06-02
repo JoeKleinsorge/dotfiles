@@ -6,6 +6,8 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 brew "ansible"
 brew "argocd-autopilot"
+brew "python@3.10"
+brew "azure-cli"
 brew "bat"
 brew "coreutils"
 brew "docker"
@@ -24,6 +26,7 @@ brew "hugo"
 brew "jq"
 brew "k9s"
 brew "kubernetes-cli"
+brew "qemu"
 brew "lima"
 brew "node"
 brew "markdownlint-cli"
@@ -33,7 +36,6 @@ brew "neovim"
 brew "openssl@3"
 brew "podman"
 brew "pre-commit"
-brew "python@3.10"
 brew "ripgrep"
 brew "rust"
 brew "starship"
@@ -52,6 +54,7 @@ cask "barrier", args: { appdir: "/Applications" }
 cask "calibre", args: { appdir: "/Applications" }
 cask "firefox", args: { appdir: "/Applications" }
 cask "font-fira-code", args: { appdir: "/Applications" }
+cask "font-fira-code-nerd-font"
 cask "font-hack", args: { appdir: "/Applications" }
 cask "font-jetbrains-mono-nerd-font"
 cask "google-chrome", args: { appdir: "/Applications" }
