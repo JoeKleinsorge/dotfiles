@@ -18,7 +18,6 @@ do
         echo "cloning $repo"
         gh repo clone $repo
     fi
-
         # Check if repo has a pre-commit hook
     if [ ! -f "$repo/.pre-commit-config.yaml" ]
     then
