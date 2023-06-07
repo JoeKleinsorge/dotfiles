@@ -33,15 +33,17 @@ lvim.builtin.treesitter.ensure_installed = {
   "java",
   "yaml",
 }
+ 
+lvim.builtin.which_key.mappings["z"] = { "<cmd>ZenMode<cr>", " Zen" }
 lvim.builtin.which_key.mappings["t"] = {
   name = "Diagnostics",
-  t = { "<cmd>TroubleToggle<cr>", "trouble" },
+  t = { "<cmd>TodoTelescope<cr>", "ToDo" },
   w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
   d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document" },
   q = { "<cmd>TroubleToggle quickfix<cr>", "quickfix" },
   l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
   r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
-  s = { "<cmd>TodoTelescope<cr>", "todos" },
+  f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
 }
 lvim.builtin.which_key.mappings["dm"] = { "<cmd>lua require('neotest').run.run()<cr>",
   "Test Method" }
@@ -64,6 +66,12 @@ lvim.plugins = {
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
+  },
+  { "folke/twilight.nvim"},
+  {
+    "folke/zen-mode.nvim",
+    lazy = true,
+    cmd = "ZenMode",
   },
   {
     "folke/todo-comments.nvim",
@@ -94,6 +102,13 @@ lvim.plugins = {
         panel = { enabled = false },
       })
     end,
+  },
+  {
+    "mickael-menu/zk-nvim",
+    config = function()
+     require("zk").setup({
+      })
+   end
   },
   { "mfussenegger/nvim-dap-python" },
   { "nvim-neotest/neotest" },
