@@ -185,20 +185,6 @@ lvim.plugins = {
     },
   },
   { "nvim-tree/nvim-web-devicons" },
-  -- {
-  --   "jackMort/ChatGPT.nvim",
-  --   event = "VeryLazy",
-  --   config = function()
-  --     require("chatgpt").setup({
-  --       api_key_cmd = "echo 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",
-  --     })
-  --   end,
-  --   dependencies = {
-  --     "MunifTanjim/nui.nvim",
-  --     "nvim-lua/plenary.nvim",
-  --     "nvim-telescope/telescope.nvim"
-  --   }
-  -- }
 }
 
 -- Copilot Setup
