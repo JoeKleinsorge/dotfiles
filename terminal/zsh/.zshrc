@@ -5,10 +5,8 @@ source $ZSH/oh-my-zsh.sh
 
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-
 eval "$(starship init zsh)"
 eval "$(github-copilot-cli alias -- "$0")"
-
 
 autoload -U +X compinit && compinit
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
@@ -46,7 +44,7 @@ alias ls="exa --long --classify --icons --git --group-directories-first --color=
 alias sl="ls"
 alias bat="bat --color=always"
 alias nivm="nvim"
-alias n="lvim"
+alias n="nvim"
 alias py="python3"
 alias k="kubectl"
 alias youtube-dl='python3 /usr/local/bin/youtube-dl'
@@ -54,9 +52,8 @@ alias pip=/usr/bin/pip3
 alias mkdir="mkdir -p"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias lcc='echo -e "\e[1;32mfix:\e[0m a commit that fixes a bug."; echo -e "\e[1;36mfeat:\e[0m a commit that adds new functionality."; echo -e "\e[1;33mdocs:\e[0m a commit that adds or improves documentation."; echo -e "\e[1;35mtest:\e[0m a commit that adds unit tests."; echo -e "\e[1;31mperf:\e[0m a commit that improves performance, without functional changes."; echo -e "\e[1;34mchore:\e[0m a catch-all type for any other commits."'
-alias notes="lvim ~/git/notes/vault"
+alias notes="nvim ~/git/notes/vault"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
