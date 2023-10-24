@@ -118,6 +118,20 @@ function M.config()
       f = { "<cmd>lua require 'notes'.find_note()<cr>", "Find Note" },
       s = { "<cmd>lua require 'notes'.search_notes()<cr>", "Search Notes" },
     },
+    h = {
+        name = "Harpoon",
+        m = { "Mark file", ":lua require('harpoon.mark').add_file()<CR>" },
+        v = { "View project marks", ":lua require('harpoon.ui').toggle_quick_menu()<CR>" },
+        n = { "Next mark", ":lua require('harpoon.ui').nav_next()<CR>" },
+        p = { "Previous mark", ":lua require('harpoon.ui').nav_prev()<CR>" },
+    },
+    t = {
+        name = "Terminal Navigation",
+        n = { "Create a new terminal", ":lua require('harpoon.term').make_term()<CR>" }, -- Create a new terminal
+        t1 = { "Navigate to terminal 1", ":lua require('harpoon.term').gotoTerminal(1)<CR>" },
+        t2 = { "Navigate to terminal 2", ":lua require('harpoon.term').gotoTerminal(2)<CR>" },
+        t3 = { "Navigate to terminal 3", ":lua require('harpoon.term').gotoTerminal(3)<CR>" },
+    },
   }
 
   local opts = {
