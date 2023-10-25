@@ -13,10 +13,10 @@ keymap("n", "H", "^", opts)
 keymap("n", "L", "$", opts)
 
 -- Better window navigation using Meta (often Alt or Esc) + directional keys
-keymap("n", "<m-h>", "<C-w>h", opts) -- Move left
-keymap("n", "<m-j>", "<C-w>j", opts) -- Move down
-keymap("n", "<m-k>", "<C-w>k", opts) -- Move up
-keymap("n", "<m-l>", "<C-w>l", opts) -- Move right
+keymap("n", "<m-h>", "<C-w>h", opts)  -- Move left
+keymap("n", "<m-j>", "<C-w>j", opts)  -- Move down
+keymap("n", "<m-k>", "<C-w>k", opts)  -- Move up
+keymap("n", "<m-l>", "<C-w>l", opts)  -- Move right
 keymap("n", "<m-tab>", "<c-6>", opts) -- Cycle through open windows
 
 -- In visual mode, indent text, and re-select the visual area
@@ -24,7 +24,7 @@ keymap("v", "<", "<gv", opts) -- Indent selected text left
 keymap("v", ">", ">gv", opts) -- Indent selected text right
 
 keymap("n", "n", "nzzzv")
-keymap("n", "N", "Nzzzv") 
+keymap("n", "N", "Nzzzv")
 keymap("v", "J", ":m '>+1<CR>gv=gv")
 keymap("v", "K", ":m '<-2<CR>gv=gv")
 
