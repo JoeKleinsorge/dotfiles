@@ -5,17 +5,14 @@ local M = {
 function M.config()
   local null_ls = require "null-ls"
 
-  local formatting = null_ls.builtins.formatting
-
   null_ls.setup {
     sources = {
-      formatting.stylua,
-      formatting.prettier,
-      formatting.prettier.with {
+      null_ls.builtins.formatting.stylua,
+      null_ls.builtins.formatting.prettier,
+      null_ls.builtins.formatting.prettier.with {
         extra_filetypes = { "toml" },
-        -- extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
       },
-      -- Code actions 
+      -- Code actions
       null_ls.builtins.code_actions.eslint_d,
       null_ls.builtins.code_actions.proselint,
       null_ls.builtins.code_actions.shellcheck,
@@ -42,8 +39,6 @@ function M.config()
       null_ls.builtins.formatting.markdown_toc,
       null_ls.builtins.formatting.prettierd,
       null_ls.builtins.formatting.ruff,
-
-      
     },
   }
 end
