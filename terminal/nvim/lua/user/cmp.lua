@@ -70,30 +70,12 @@ function M.config()
       ["<Up>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "c" }),
       ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-1), { "i", "c" }),
       ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(1), { "i", "c" }),
-      ["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
+      ["<TAB>"] = cmp.mapping.confirm { select = true },  -- Map Tab to accept the selected suggestion
       ["<C-e>"] = cmp.mapping {
         i = cmp.mapping.abort(),
         c = cmp.mapping.close(),
       },
-      -- Accept currently selected item. If none selected, `select` first item.
-      -- Set `select` to `false` to only confirm explicitly selected items.
       ["<CR>"] = cmp.mapping.confirm { select = true },
-      ["<Tab>"] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-          cmp.select_next_item()
-        elseif luasnip.expandable() then
-          luasnip.expand()
-        elseif luasnip.expand_or_jumpable() then
-          luasnip.expand_or_jump()
-        elseif check_backspace() then
-          fallback()
-        else
-          fallback()
-        end
-      end, {
-        "i",
-        "s",
-      }),
       ["<S-Tab>"] = cmp.mapping(function(fallback)
         if cmp.visible() then
           cmp.select_prev_item()
@@ -103,9 +85,9 @@ function M.config()
           fallback()
         end
       end, {
-        "i",
-        "s",
-      }),
+          "i",
+          "s",
+        }),
     },
     formatting = {
       fields = { "kind", "abbr", "menu" },
