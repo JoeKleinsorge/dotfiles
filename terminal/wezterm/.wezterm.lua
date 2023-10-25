@@ -12,3 +12,4 @@ config.font =
     wezterm.font('JetBrains Mono', { weight = 'Bold' })
 config.font_size = 15.0
 return config
+
