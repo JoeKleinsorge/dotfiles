@@ -7,7 +7,8 @@ function M.config()
 	local mappings = {
 		["q"] = { "<cmd>confirm q<CR>", "Quit" },
 		["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment" },
-		["c"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+		["s"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+		["c"] = { "<cmd>bdelete<CR>", "Close Buffer" },
 		["e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
 		["b"] = { "<cmd>Telescope buffers previewer=false<cr>", "Find Buffer" },
 		["a"] = { "harpoon.mark.add_file" },
