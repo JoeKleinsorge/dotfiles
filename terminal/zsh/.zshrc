@@ -58,3 +58,21 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# fh - browse firefox history
+fh() {
+  local cols sep
+  cols=$(( COLUMNS / 3 ))
+  sep='{::}'
+
+  # Update the path to the Firefox history file
+  cp -f /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles/w6zaqp7l.default-release/places.sqlite /tmp/h
+
+  sqlite3 -separator $sep /tmp/h \
+    "SELECT substr(moz_places.title, 1, $cols), moz_places.url
+     FROM moz_places
+     JOIN moz_historyvisits ON moz_places.id = moz_historyvisits.place_id
+     ORDER BY moz_historyvisits.visit_date DESC" |
+  awk -F $sep '{printf "%-'$cols's  \x1b[36m%s\x1b[m\n", $1, $2}' |
+  fzf --ansi --multi | sed 's#.*\(https*://\)#\1#' | xargs open
+}
