@@ -18,7 +18,8 @@ ZSH_THEME="robbyrussell"
 plugins=(
 	git
 	oc
-	kubelet
+  kubectl	
+  starship
  	zsh-syntax-highlighting
  	zsh-autosuggestions
  	zsh-completions
