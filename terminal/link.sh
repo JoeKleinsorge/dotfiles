@@ -5,13 +5,10 @@
 ln -s ~/git/dotfiles/terminal/zsh/.zshrc ~/.zshrc
 
 ## nvim
-ln -s ~/git/dotfiles/terminal/nvim/ ~/.config/
+ln -s ~/git/dotfiles/terminal/nvim/ ~/.config/nvim
 
-# ## Kitty
-# ln -s ~/git/dotfiles/terminal/kitty/kitty.conf ~/.config/kitty/kitty.conf
-# ln -s ~/git/dotfiles/terminal/kitty/kitty-themes.conf ~/.config/kitty/kitty-themes.conf
-# cp ~/git/dotfiles/terminal/kitty/kitty.app.png ~/.config/kitty/kitty.app.png
-# rm /var/folders/*/*/*/com.apple.dock.iconcache; killall Dock
-#
-# ## LunarVim
-# ln -s ~/git/dotfiles/terminal/lunarvim/config.lua  ~/.config/lvim/config.lua
+## wezterm
+ln -s ~/git/dotfiles/terminal/wezterm/wezterm.lua ~/.wezterm.lua
+
+## k9s
+ln -s ~/git/dotfiles/terminal/k9s ~/Users/joe/Library/Application Support/
