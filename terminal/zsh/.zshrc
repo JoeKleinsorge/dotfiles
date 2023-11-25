@@ -41,6 +41,7 @@ alias gp="git push"
 alias gpl="git pull"
 alias gac="ga && gc"
 alias gap="ga && gc 'ci: commit' && gp"
+alias gcc='echo -e "\e[1;32mfix:\e[0m a commit that fixes a bug."; echo -e "\e[1;36mfeat:\e[0m a commit that adds new functionality."; echo -e "\e[1;33mdocs:\e[0m a commit that adds or improves documentation."; echo -e "\e[1;35mtest:\e[0m a commit that adds unit tests."; echo -e "\e[1;31mperf:\e[0m a commit that improves performance, without functional changes."; echo -e "\e[1;34mchore:\e[0m a catch-all type for any other commits."'
 alias gl="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
 alias ls="exa --long --classify --icons --git --group-directories-first --color=always"
 alias sl="ls"
@@ -49,12 +50,11 @@ alias nivm="nvim"
 alias n="nvim"
 alias py="python3"
 alias k="kubectl"
-alias youtube-dl='python3 /usr/local/bin/youtube-dl'
 alias pip=/usr/bin/pip3
 alias mkdir="mkdir -p"
 alias path='echo $PATH | tr -s ":" "\n"'
-alias lcc='echo -e "\e[1;32mfix:\e[0m a commit that fixes a bug."; echo -e "\e[1;36mfeat:\e[0m a commit that adds new functionality."; echo -e "\e[1;33mdocs:\e[0m a commit that adds or improves documentation."; echo -e "\e[1;35mtest:\e[0m a commit that adds unit tests."; echo -e "\e[1;31mperf:\e[0m a commit that improves performance, without functional changes."; echo -e "\e[1;34mchore:\e[0m a catch-all type for any other commits."'
 alias notes="nvim ~/git/notes/vault"
+alias ...="cd ../.."
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # Load Angular CLI autocompletion.
