@@ -1,0 +1,112 @@
+# -----------------------------------------------------------------------------
+# Kanagawa Dragon
+# -----------------------------------------------------------------------------
+
+# Styles...
+fg: &fg "#C5C9C5"
+bg: &bg "#181616"
+cursor: &cursor "#C8C093"
+selection_background: &selection_background "#2D4F67"
+color0: &color0 "#0D0C0C"
+color8: &color8 "#A6A69C"
+color1: &color1 "#C4746E"
+color9: &color9 "#E46876"
+color2: &color2 "#8A9A7B"
+color10: &color10 "#87A987"
+color3: &color3 "#C4B28A"
+color11: &color11 "#E6C384"
+color4: &color4 "#8BA4B0"
+color12: &color12 "#7FB4CA"
+color5: &color5 "#A292A3"
+color13: &color13 "#938AA9"
+color6: &color6 "#8EA4A2"
+color14: &color14 "#7AA89F"
+color7: &color7 "#C8C093"
+color15: &color15 "#C5C9C5"
+
+# Skin...
+k9s:
+  body:
+    fgColor: *fg
+    bgColor: *bg
+    logoColor: *color4
+  prompt:
+    fgColor: *fg
+    bgColor: *bg
+    suggestColor: *color2
+  info:
+    fgColor: *fg
+    sectionColor: *color12
+  dialog:
+    fgColor: *fg
+    bgColor: *bg
+    buttonFgColor: *fg
+    buttonBgColor: *color10
+    buttonFocusFgColor: white
+    buttonFocusBgColor: *color14
+    labelFgColor: *color13
+    fieldFgColor: *fg
+  frame:
+    border:
+      fgColor: *fg
+      bgColor: *color0
+      focusColor: *color7
+    menu:
+      fgColor: *fg
+      keyColor: *color11
+      numKeyColor: *color2
+    crumbs:
+      fgColor: *fg
+      bgColor: *color11
+      activeColor: *color9
+    status:
+      newColor: *color4
+      modifyColor: *color12
+      addColor: *color5
+      errorColor: *color3
+      highlightColor: *color11
+      killColor: *color9
+      completedColor: *color15
+    title:
+      fgColor: *fg
+      bgColor: *bg
+      highlightColor: *color5
+      counterColor: *color9
+      filterColor: *color9
+  views:
+    table:
+      fgColor: *fg
+      bgColor: *bg
+      cursorFgColor: *fg
+      cursorBgColor: *color14
+      markColor: *color13
+      header:
+        fgColor: *fg
+        bgColor: *bg
+        sorterColor: *color2
+    xray:
+      fgColor: *color4
+      bgColor: *color0
+      cursorColor: *color14
+      graphicColor: *color13
+      showIcons: false
+    charts:
+      bgColor: *bg
+      defaultDialColors:
+        - *color14
+        - *color3
+      defaultChartColors:
+        - *color14
+        - *color3
+    yaml:
+      keyColor: *color12
+      colorColor: *color4
+      valueColor: *color11
+    logs:
+      fgColor: *color4
+      bgColor: *bg
+      indicator:
+        fgColor: *fg
+        bgColor: *bg
+        toggleOnColor: *color12
+        toggleOffColor: *color4
