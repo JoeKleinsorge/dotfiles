@@ -54,7 +54,8 @@ alias pip=/usr/bin/pip3
 alias mkdir="mkdir -p"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias notes="nvim ~/git/notes/vault"
-alias ...="cd ../.."
+alias ...="../.."
+
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # Load Angular CLI autocompletion.

@@ -28,7 +28,7 @@ k9s:
         - all
         - default
       view:
-        active: pulse
+        active: namespace
       featureGates:
         nodeShell: true
       shellPod:
