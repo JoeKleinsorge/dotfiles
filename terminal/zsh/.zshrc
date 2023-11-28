@@ -1,5 +1,8 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/usr/local/opt/node@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR="nvim"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -41,34 +44,34 @@ alias gp="git push"
 alias gpl="git pull"
 alias gac="ga && gc"
 alias gap="ga && gc 'ci: commit' && gp"
+alias gapf= "git commit --amend --no-edit && gp --force-with-lease"
 alias gcc='echo -e "\e[1;32mfix:\e[0m a commit that fixes a bug."; echo -e "\e[1;36mfeat:\e[0m a commit that adds new functionality."; echo -e "\e[1;33mdocs:\e[0m a commit that adds or improves documentation."; echo -e "\e[1;35mtest:\e[0m a commit that adds unit tests."; echo -e "\e[1;31mperf:\e[0m a commit that improves performance, without functional changes."; echo -e "\e[1;34mchore:\e[0m a catch-all type for any other commits."'
 alias gl="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
-alias ls="exa --long --classify --icons --git --group-directories-first --color=always"
+alias ls="exa --long --classify --icons --git --group-directories-first --color=always -a"
 alias sl="ls"
 alias bat="bat --color=always"
 alias nivm="nvim"
 alias n="nvim"
 alias py="python3"
 alias k="kubectl"
-alias pip=/usr/bin/pip3
+alias pip="/usr/bin/pip3"
 alias mkdir="mkdir -p"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias notes="nvim ~/git/notes/vault"
 alias ...="../.."
 
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
+# =======================================
 # fh - browse firefox history
 fh() {
-  local cols sep
+  local cols sep profile_dir
   cols=$(( COLUMNS / 3 ))
   sep='{::}'
+  
+  # Identify the Firefox profile directory ending with ".default-release"
+  profile_dir=$(find /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles -type d -name "*.default-release" -print -quit)
 
   # Update the path to the Firefox history file
-  cp -f /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles/w6zaqp7l.default-release/places.sqlite /tmp/h
+  cp -f "$profile_dir/places.sqlite" /tmp/h
 
   sqlite3 -separator $sep /tmp/h \
     "SELECT substr(moz_places.title, 1, $cols), moz_places.url
@@ -78,3 +81,4 @@ fh() {
   awk -F $sep '{printf "%-'$cols's  \x1b[36m%s\x1b[m\n", $1, $2}' |
   fzf --ansi --multi | sed 's#.*\(https*://\)#\1#' | xargs open
 }
+
