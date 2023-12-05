@@ -34,7 +34,6 @@ alias cp='cp -v -i'
 alias rm='rm -i'
 alias mv='mv -i'
 alias usage='du -hs ./* | sort -h'
-alias fhis='history | rg'
 alias s='wezterm ssh'
 alias brew="arch -arm64 brew"
 alias gs="git status"
@@ -82,3 +81,19 @@ fh() {
   fzf --ansi --multi | sed 's#.*\(https*://\)#\1#' | xargs open
 }
 
+# Function to extract common archive formats
+extract() {
+  if [ -f "$1" ]; then
+    case "$1" in
+      *.tar.gz) tar -xzvf "$1" ;;
+      *.tar.xz) tar -xJvf "$1" ;;
+      *.tar.bz2) tar -xjvf "$1" ;;
+      *.zip) unzip "$1" ;;
+      *.rar) unrar x "$1" ;;
+      *.7z) 7z x "$1" ;;
+      *) echo "Unsupported archive format." ;;
+    esac
+  else
+    echo "File not found."
+  fi
+}
