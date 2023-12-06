@@ -97,3 +97,58 @@ extract() {
     echo "File not found."
   fi
 }
+
+squash() {
+  commit=$(git log --oneline | fzf | awk '{print $1}')
+  if [ -n "$commit" ]; then
+    git reset --soft $commit && git add -A && git commit
+  else
+    echo "Squash cancelled because no commit was selected."
+  fi
+}
+
+glt() {
+  git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf("  \033[33m%14s: \033[37m %s\033[0m\n", substr($2, 1, length($2)-1), $1)}'
+}
+
+cherry() {
+  commit=$(git log --pretty=format:"%h %s" --branches='*' -n 100 \
+    | fzf --height "90%" --header "PLEASE CHOOSE A COMMIT TO CHERRY-PICK" --reverse --border --ansi --preview "git show --color=always {1}" \
+    | awk '{print $1}')
+  if [ -n "$commit" ]; then
+    git cherry-pick $commit
+  fi
+}
+
+gco() {
+    branch=$(git branch --all \
+      | fzf --height "90%" --header "PLEASE CHOOSE A BRANCH TO CHECKOUT" \
+      | sed "s/remotes\/origin\///" | xargs)
+    if [ -n "$branch" ]; then
+      git checkout $branch
+    fi
+}
+
+gwi() {
+    issue=$(gh issue list | fzf --header "PLEASE SELECT AN ISSUE TO WORK ON" | awk -F '\t' '{ print $1 }')
+    sanitized=$(gh issue view $issue --json "title" | jq -r ".title" | tr '[:upper:]' '[:lower:]' | tr -s -c "a-z0-9\n" "-" | head -c 60)
+    branchname=$issue-$sanitized
+    shortname=$(echo $branchname | head -c 30)
+    if [[ ! -z "$shortname" ]]; then
+        git fetch
+        existing=$(git branch -a | grep -v remotes | grep $shortname | head -n 1)
+        if [[ ! -z "$existing" ]]; then
+            sh -c "git switch $existing"
+        else
+            bold=$(tput bold)
+            normal=$(tput sgr0)
+            echo "${bold}Please confirm new branch name:${normal}"
+            vared branchname
+            base=$(git branch --show-current)
+            echo "${bold}Please confirm the base branch:${normal}"
+            vared base
+            git checkout -b $branchname origin/$base
+            git push --set-upstream origin $branchname
+        fi
+    fi
+}

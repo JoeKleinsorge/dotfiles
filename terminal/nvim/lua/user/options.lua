@@ -1,3 +1,4 @@
+vim.loader.enable()
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 vim.opt.backup = false -- creates a backup file

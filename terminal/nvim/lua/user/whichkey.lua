@@ -11,7 +11,7 @@ function M.config()
 		["c"] = { "<cmd>bdelete<CR>", "Close Buffer" },
 		["e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
 		["b"] = { "<cmd>Telescope buffers previewer=false<cr>", "Find Buffer" },
-		["a"] = { "harpoon.mark.add_file" },
+		-- ["a"] = { "harpoon.mark.add_file" },
 		d = {
 			name = "Debug",
 			t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
@@ -62,7 +62,7 @@ function M.config()
 
 		g = {
 			name = "Git",
-			g = { "<cmd>Neogit<cr>", "Neogit" },
+			-- g = { "<cmd>Neogit<cr>", "Neogit" },
 			j = { "<cmd>lua require 'gitsigns'.next_hunk({navigation_message = false})<cr>", "Next Hunk" },
 			k = { "<cmd>lua require 'gitsigns'.prev_hunk({navigation_message = false})<cr>", "Prev Hunk" },
 			l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
