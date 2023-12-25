@@ -81,6 +81,29 @@ fh() {
   fzf --ansi --multi | sed 's#.*\(https*://\)#\1#' | xargs open
 }
 
+# fb - browse firefox bookmarks
+fb() {
+  local cols sep profile_dir
+  cols=$(( COLUMNS / 3 ))
+  sep='{::}'
+
+  # Identify the Firefox profile directory ending with ".default-release"
+  profile_dir=$(find /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles -type d -name "*.default-release" -print -quit)
+
+  # Update the path to the Firefox database file
+  cp -f "$profile_dir/places.sqlite" /tmp/b
+
+  sqlite3 -separator $sep /tmp/b \
+    "SELECT substr(moz_bookmarks.title, 1, $cols), moz_places.url
+     FROM moz_bookmarks
+     LEFT JOIN moz_places ON moz_bookmarks.fk = moz_places.id
+     WHERE moz_bookmarks.type = 1
+     ORDER BY moz_bookmarks.dateAdded DESC" |
+  awk -F $sep '{printf "%-'$cols's  \x1b[36m%s\x1b[m\n", $1, $2}' |
+  fzf --ansi --multi | sed 's#.*\(https*://\)#\1#' | xargs open
+}
+
+
 # Function to extract common archive formats
 extract() {
   if [ -f "$1" ]; then
