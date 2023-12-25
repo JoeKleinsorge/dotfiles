@@ -1,29 +1,98 @@
 local M = {
-  "tpope/vim-fugitive", 
+  "neogitorg/neogit",
   event = "VeryLazy",
 }
 
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+function M.config()
+  local icons = require "user.icons"
 
-local F = vim.api.nvim_create_augroup("M", {})
-
-local autocmd = vim.api.nvim_create_autocmd
-autocmd("BufWinEnter", {
-    group = F,
-    pattern = "*",
-    callback = function()
-        if vim.bo.ft ~= "fugitive" then
-            return
-        end
-
-        local bufnr = vim.api.nvim_get_current_buf()
-        local opts = {buffer = bufnr, remap = false}
-        vim.keymap.set("n", "<leader>gpl", function()
-            vim.cmd.Git({'pull',  '--rebase'})
-        end, opts)
-
-        vim.keymap.set("n", "<leader>gp", ":Git push -u origin ", opts);
-    end,
-})
+  require("neogit").setup {
+    disable_signs = false,
+    disable_hint = true,
+    disable_context_highlighting = false,
+    disable_commit_confirmation = true,
+    disable_insert_on_commit = "auto",
+    auto_refresh = true,
+    disable_builtin_notifications = false,
+    use_magit_keybindings = false,
+    kind = "tab",
+    commit_popup = {
+      kind = "split",
+    },
+    popup = {
+      kind = "split",
+    },
+    signs = {
+      section = { icons.ui.ChevronRight, icons.ui.ChevronShortDown },
+      item = { icons.ui.ChevronRight, icons.ui.ChevronShortDown },
+      hunk = { "", "" },
+    },
+    integrations = {
+      diffview = true,
+    },
+    -- Setting any section to `false` will make the section not render at all
+    -- sections = {
+    --   untracked = {
+    --     folded = false,
+    --   },
+    --   unstaged = {
+    --     folded = false,
+    --   },
+    --   staged = {
+    --     folded = false,
+    --   },
+    --   stashes = {
+    --     folded = true,
+    --   },
+    --   unpulled = {
+    --     folded = true,
+    --   },
+    --   unmerged = {
+    --     folded = false,
+    --   },
+    --   recent = {
+    --     folded = true,
+    --   },
+    -- },
+    -- override/add mappings
+    -- mappings = {
+    --   -- modify status buffer mappings
+    --   status = {
+    --     ["q"] = "Close",
+    --     ["1"] = "Depth1",
+    --     ["2"] = "Depth2",
+    --     ["3"] = "Depth3",
+    --     ["4"] = "Depth4",
+    --     ["<tab>"] = "Toggle",
+    --     ["x"] = "Discard",
+    --     ["s"] = "Stage",
+    --     ["a"] = "StageUnstaged",
+    --     ["<c-s>"] = "StageAll",
+    --     ["u"] = "Unstage",
+    --     ["U"] = "UnstageStaged",
+    --     ["d"] = "DiffAtFile",
+    --     ["$"] = "CommandHistory",
+    --     ["<c-r>"] = "RefreshBuffer",
+    --     ["o"] = "GoToFile",
+    --     ["<enter>"] = "Toggle",
+    --     ["<c-v>"] = "VSplitOpen",
+    --     ["<c-x>"] = "SplitOpen",
+    --     ["<c-t>"] = "TabOpen",
+    --     ["?"] = "HelpPopup",
+    --     ["D"] = "DiffPopup",
+    --     ["p"] = "PullPopup",
+    --     ["r"] = "RebasePopup",
+    --     ["P"] = "PushPopup",
+    --     ["c"] = "CommitPopup",
+    --     ["L"] = "LogPopup",
+    --     ["Z"] = "StashPopup",
+    --     ["b"] = "BranchPopup",
+    --     -- ["<space>"] = "Stage",
+    --     -- Removes the default mapping of "s"
+    --     -- ["s"] = "",
+    --   },
+    -- },
+  }
+end
 
 return M
