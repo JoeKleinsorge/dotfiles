@@ -36,6 +36,7 @@ vim.cmd([[:amenu 10.110 mousemenu.References <cmd>lua vim.lsp.buf.references()<C
 keymap("n", "<RightMouse>", "<cmd>:popup mousemenu<CR>")
 keymap("n", "<Tab>", "<cmd>:popup mousemenu<CR>")
 
+
 --undotree
 keymap("n", "<leader>u", vim.cmd.UndotreeToggle)
 
