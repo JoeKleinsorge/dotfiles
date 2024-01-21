@@ -23,10 +23,10 @@ keymap("n", "<m-tab>", "<c-6>", opts) -- Cycle through open windows
 keymap("v", "<", "<gv", opts) -- Indent selected text left
 keymap("v", ">", ">gv", opts) -- Indent selected text right
 
-keymap("n", "n", "nzzzv")
-keymap("n", "N", "Nzzzv")
-keymap("v", "J", ":m '>+1<CR>gv=gv")
-keymap("v", "K", ":m '<-2<CR>gv=gv")
+keymap("n", "n", "nzzzv", opts) -- Move to next search result and center on screen
+keymap("n", "N", "Nzzzv", opts) -- Move to previous search result and center on screen
+keymap("v", "J", ":m '>+1<CR>gv=gv") -- Move selected lines down
+keymap("v", "K", ":m '<-2<CR>gv=gv", opts) -- Move selected lines up
 
 -- When pasting in visual mode, cut the selected text before pasting
 keymap("x", "p", [["_dP]]) -- Cut the selected text and paste it

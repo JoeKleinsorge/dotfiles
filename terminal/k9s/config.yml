@@ -22,13 +22,14 @@ k9s:
   clusters:
     default:
       namespace:
-        active: all
+        active: immich
         lockFavorites: false
         favorites:
+        - immich
         - all
         - default
       view:
-        active: namespace
+        active: pods
       featureGates:
         nodeShell: true
       shellPod:
