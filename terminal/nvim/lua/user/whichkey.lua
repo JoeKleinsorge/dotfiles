@@ -70,10 +70,9 @@ function M.config()
 				"<cmd>Telescope git_bcommits<cr>",
 				"Checkout commit(for current file)",
 			},
-			d = {
-				"<cmd>Gitsigns diffthis HEAD<cr>",
-				"Git Diff",
-			},
+			d = { "<cmd>DiffviewOpen<cr>", "Diffview" },
+      D = { "<cmd>DiffviewClose<cr>", "Diffview Close" },
+      f = { "<cmd>Telescope git_files<cr>", "Find file" },
 		},
 
 		l = {
@@ -113,6 +112,12 @@ function M.config()
       name = "Undo Tree",
       u = { "<cmd>UndotreeToggle<cr>", "Toggle" },
     },
+    a = {
+      name = "Gen",
+      a= { "<cmd>Gen<cr>", "Gen" },
+
+    },
+
 
 		-- h = {
 		-- 	name = "Harpoon",
