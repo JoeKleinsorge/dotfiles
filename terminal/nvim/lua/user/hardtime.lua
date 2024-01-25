@@ -1,12 +1,7 @@
 local M = {
    "m4xshen/hardtime.nvim",
-   event = "VeryLazy",
-   lazy = false,
+   dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+   opts = {}
 }
-
--- function M.config()
---    dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
---    opts = {}
--- }
 
 return M

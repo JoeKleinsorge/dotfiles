@@ -112,11 +112,6 @@ function M.config()
       name = "Undo Tree",
       u = { "<cmd>UndotreeToggle<cr>", "Toggle" },
     },
-    a = {
-      name = "Gen",
-      a= { "<cmd>Gen<cr>", "Gen" },
-
-    },
 
 
 		-- h = {
