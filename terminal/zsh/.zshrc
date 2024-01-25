@@ -1,14 +1,9 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/node@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export ZSH="$HOME/.oh-my-zsh"
+# export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="nvim"
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
-
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
@@ -19,19 +14,19 @@ eval "$(github-copilot-cli alias -- "$0")"
 autoload -U +X compinit && compinit
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
-# =======================================
-plugins=(
-	git
-	oc
-  kubectl	
-  starship
- 	zsh-syntax-highlighting
- 	zsh-autosuggestions
- 	zsh-completions
-)
-
+# # =======================================
+# plugins=(
+# 	git
+# 	oc
+#   kubectl	
+#   starship
+#  	zsh-syntax-highlighting
+#  	zsh-autosuggestions
+#  	zsh-completions
+# )
+#
 # =======================================
 alias brew='arch -arm64 brew install'
 alias cp='cp -v -i'
