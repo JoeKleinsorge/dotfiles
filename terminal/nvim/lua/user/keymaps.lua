@@ -10,8 +10,8 @@ keymap("n", "<C-Space>", "<cmd>WhichKey \\<space><cr>", opts)
 
 -- Better line navigation
 keymap("n", "H", "^", opts)
-keymap("n", "H", "^", opts)
-keymap("v", "L", "$", opts)
+keymap("n", "L", "$", opts)
+keymap("v", "H", "^", opts)
 keymap("v", "L", "$", opts)
 
 -- Better window navigation using Meta (often Alt or Esc) + directional keys
