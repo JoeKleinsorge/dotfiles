@@ -8,6 +8,9 @@ vim.g.maplocalleader = " "
 -- Map Ctrl+Space to open a popup menu with commands, e.g., WhichKey
 keymap("n", "<C-Space>", "<cmd>WhichKey \\<space><cr>", opts)
 
+-- Better escape
+keymap("i", "jk", "<Esc>", opts)
+
 -- Better line navigation
 keymap("n", "H", "^", opts)
 keymap("n", "L", "$", opts)
@@ -22,12 +25,12 @@ keymap("n", "<m-l>", "<C-w>l", opts)  -- Move right
 keymap("n", "<m-tab>", "<c-6>", opts) -- Cycle through open windows
 
 -- In visual mode, indent text, and re-select the visual area
-keymap("v", "<", "<gv", opts) -- Indent selected text left
-keymap("v", ">", ">gv", opts) -- Indent selected text right
+keymap("v", "<", "<gv", opts)              -- Indent selected text left
+keymap("v", ">", ">gv", opts)              -- Indent selected text right
 
-keymap("n", "n", "nzzzv", opts) -- Move to next search result and center on screen
-keymap("n", "N", "Nzzzv", opts) -- Move to previous search result and center on screen
-keymap("v", "J", ":m '>+1<CR>gv=gv") -- Move selected lines down
+keymap("n", "n", "nzzzv", opts)            -- Move to next search result and center on screen
+keymap("n", "N", "Nzzzv", opts)            -- Move to previous search result and center on screen
+keymap("v", "J", ":m '>+1<CR>gv=gv")       -- Move selected lines down
 keymap("v", "K", ":m '<-2<CR>gv=gv", opts) -- Move selected lines up
 
 -- When pasting in visual mode, cut the selected text before pasting
