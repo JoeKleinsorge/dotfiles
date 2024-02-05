@@ -56,7 +56,8 @@ alias pip="/usr/bin/pip3"
 alias mkdir="mkdir -p"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias notes="nvim ~/git/notes/vault"
-alias ...="../.."
+alias ...="cd ../.."
+alias dot="cd ~/git/dotfiles"
 
 # =======================================
 # fh - browse firefox history
