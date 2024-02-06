@@ -58,6 +58,7 @@ alias path='echo $PATH | tr -s ":" "\n"'
 alias notes="nvim ~/git/notes/vault"
 alias ...="cd ../.."
 alias dot="cd ~/git/dotfiles"
+alias skill="ps -ef | fzf | awk '{print $2}' | xargs kill -9"
 
 # =======================================
 # fh - browse firefox history
@@ -174,6 +175,11 @@ gwi() {
             git push --set-upstream origin $branchname
         fi
     fi
+}
+
+pods(){
+  kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{.metadata.namespace} {.metadata.name}{"\n"}' | \
+  fzf --preview="kubectl logs {2} --namespace {1} --all-containers" --preview-window=down:80%
 }
 
 export NVM_DIR="$HOME/.nvm"
