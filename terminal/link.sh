@@ -12,3 +12,6 @@ ln -s ~/git/dotfiles/terminal/wezterm/wezterm.lua ~/.wezterm.lua
 
 ## k9s
 ln -s ~/git/dotfiles/terminal/k9s ~/Users/joe/Library/Application Support/
+
+## tmux
+ln -s ~/git/dotfiles/terminal/tmux/.tmux.conf ~/.tmux.conf
