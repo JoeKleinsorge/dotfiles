@@ -67,8 +67,8 @@ fh() {
   cols=$(( COLUMNS / 3 ))
   sep='{::}'
   
-  # Identify the Firefox profile directory ending with ".default-release"
-  profile_dir=$(find /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles -type d -name "*.default-release" -print -quit)
+  # Search for places.sqlite and extract the directory path
+  profile_dir=$(find /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles -type f -name "places.sqlite" -exec dirname {} \; | head -n 1)
 
   # Update the path to the Firefox history file
   cp -f "$profile_dir/places.sqlite" /tmp/h
@@ -88,8 +88,8 @@ fb() {
   cols=$(( COLUMNS / 3 ))
   sep='{::}'
 
-  # Identify the Firefox profile directory ending with ".default-release"
-  profile_dir=$(find /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles -type d -name "*.default-release" -print -quit)
+  # Search for places.sqlite and extract the directory path
+  profile_dir=$(find /Users/$(whoami)/Library/Application\ Support/Firefox/Profiles -type f -name "places.sqlite" -exec dirname {} \; | head -n 1)
 
   # Update the path to the Firefox database file
   cp -f "$profile_dir/places.sqlite" /tmp/b
