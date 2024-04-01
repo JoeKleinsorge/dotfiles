@@ -1,0 +1,13 @@
+k9s:
+  cluster: default
+  namespace:
+    active: argocd
+    lockFavorites: false
+    favorites:
+    - argocd
+    - default
+  view:
+    active: secret
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost
