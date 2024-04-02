@@ -1,9 +1,8 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/node@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-# export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="nvim"
-# source $ZSH/oh-my-zsh.sh
+export KUBE_EDITOR=my_fav_editor
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

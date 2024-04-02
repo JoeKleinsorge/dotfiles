@@ -18,4 +18,10 @@ local M = {
 		vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 	end,
 }
+-- local M = {
+--   "EdenEast/nightfox.nvim",
+--   config = function()
+--     require("nightfox").load()
+--   end,
+-- }
 return M
