@@ -2,7 +2,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/node@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export EDITOR="nvim"
-export KUBE_EDITOR=my_fav_editor
+export KUBE_EDITOR="nvim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

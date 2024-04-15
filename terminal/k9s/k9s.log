@@ -1,4 +1,298 @@
-[90m4:09PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
-[90m4:09PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
-[90m4:09PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
-[90m4:09PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:24PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:24PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:25PM[0m [31mERR[0m [1mCommand failed[0m [36merror=[0m[31m[1m"exit status 1"[0m[0m
+[90m9:25PM[0m [31mERR[0m [1mExec failed "/usr/local/bin/kubectl edit --context default statefulsets.v1.apps/argocd-application-controller -n argocd": exit status 1
+[0m [36merror=[0m[31m[1m"exit status 1\n"[0m[0m
+[90m9:25PM[0m [31mERR[0m [1mEdit command failed: exit status 1
+[0m [36merror=[0m[31m[1m"exit status 1\n"[0m[0m
+[90m9:26PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for arc/arc-actions-runner-controller-694f7b7dc5-4w26x (kube-rbac-proxy)"[0m[0m
+[90m9:26PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for arc/arc-actions-runner-controller-694f7b7dc5-4w26x (manager)"[0m[0m
+[90m9:26PM[0m [31mERR[0m [1minvalid command. use `xray xxx`[0m
+[90m9:26PM[0m [31mERR[0m [1minvalid command. use `xray xxx`[0m
+[90m9:27PM[0m [31mERR[0m [1mReconcile failed[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/api/v1/events?resourceVersion=0&resourceVersionMatch=NotOlderThan\": context canceled"[0m[0m
+[90m9:27PM[0m [31mERR[0m [1mGet "https://192.168.1.101:6443/api/v1/events?resourceVersion=0&resourceVersionMatch=NotOlderThan": context canceled[0m
+[90m9:27PM[0m [31mERR[0m [1minvalid resource name: "arc"[0m
+[90m9:27PM[0m [31mERR[0m [1minvalid command. use `xray xxx`[0m
+[90m9:27PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:27PM[0m [31mERR[0m [1mReconcile failed[0m [36merror=[0m[31m[1m"serviceaccounts \"tailscale\" not found"[0m[0m
+[90m9:27PM[0m [31mERR[0m [1mserviceaccounts "tailscale" not found[0m
+[90m9:27PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:27PM[0m [31mERR[0m [1mReconcile failed[0m [36merror=[0m[31m[1m"serviceaccounts \"argocd-dex-server\" not found"[0m[0m
+[90m9:27PM[0m [31mERR[0m [1mserviceaccounts "argocd-dex-server" not found[0m
+[90m9:27PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:27PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:27PM[0m [31mERR[0m [1mReconcile failed[0m [36merror=[0m[31m[1m"serviceaccounts \"default\" not found"[0m[0m
+[90m9:27PM[0m [31mERR[0m [1mserviceaccounts "default" not found[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/configmaps"::"seafile/seafile-mariadb"[0m [36merror=[0m[31m[1m"configmaps \"seafile-mariadb\" not found"[0m[0m
+[90m9:28PM[0m [31mERR[0m [1mReconcile failed[0m [36merror=[0m[31m[1m"serviceaccounts \"cert-manager-cainjector\" not found"[0m[0m
+[90m9:28PM[0m [31mERR[0m [1mserviceaccounts "cert-manager-cainjector" not found[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"immich/immich-postgresql"[0m [36merror=[0m[31m[1m"secrets \"immich-postgresql\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"kube-prometheus-stack/kube-prometheus-stack-admission"[0m [36merror=[0m[31m[1m"secrets \"kube-prometheus-stack-admission\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/configmaps"::"kube-prometheus-stack/prometheus-kube-prometheus-stack-prometheus-rulefiles-0"[0m [36merror=[0m[31m[1m"configmaps \"prometheus-kube-prometheus-stack-prometheus-rulefiles-0\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/configmaps"::"kube-prometheus-stack/kube-prometheus-stack-grafana"[0m [36merror=[0m[31m[1m"configmaps \"kube-prometheus-stack-grafana\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/configmaps"::"kube-prometheus-stack/kube-prometheus-stack-grafana-config-dashboards"[0m [36merror=[0m[31m[1m"configmaps \"kube-prometheus-stack-grafana-config-dashboards\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"photoprism/credentials"[0m [36merror=[0m[31m[1m"secrets \"credentials\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [31mERR[0m [1mReconcile failed[0m [36merror=[0m[31m[1m"serviceaccounts \"default\" not found"[0m[0m
+[90m9:28PM[0m [31mERR[0m [1mserviceaccounts "default" not found[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:28PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:29PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:30PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:30PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:31PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:31PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"external-dns/cloudflare-api-token-secret"[0m [36merror=[0m[31m[1m"secrets \"cloudflare-api-token-secret\" not found"[0m[0m
+[90m9:32PM[0m [33mWRN[0m [1mMissing ref "v1/secrets"::"tailscale/tailscale"[0m [36merror=[0m[31m[1m"secrets \"tailscale\" not found"[0m[0m
+[90m9:32PM[0m [31mERR[0m [1mReconcile failed[0m [36merror=[0m[31m[1m"unexpected error when reading response body. Please retry. Original error: context canceled"[0m[0m
+[90m9:32PM[0m [31mERR[0m [1munexpected error when reading response body. Please retry. Original error: context canceled[0m
+[90m9:33PM[0m [31mERR[0m [1munable to fetch pod[0m [36merror=[0m[31m[1m"pods \"excalidraw-6f6cdbc467-ltwgz\" not found"[0m[0m
+[90m9:33PM[0m [31mERR[0m [1mexcalidraw/excalidraw-6f6cdbc467-ltwgz is not in a running state[0m
+[90m9:34PM[0m [31mERR[0m [1munable to fetch pod[0m [36merror=[0m[31m[1m"pods \"argocd-server-5d8d58455f-f2nc9\" not found"[0m[0m
+[90m9:34PM[0m [31mERR[0m [1margocd/argocd-server-5d8d58455f-f2nc9 is not in a running state[0m
+[90m9:34PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for arc/arc-actions-runner-controller-694f7b7dc5-4w26x (manager)"[0m[0m
+[90m9:34PM[0m [31mERR[0m [1mCommand failed[0m [36merror=[0m[31m[1m"exit status 1"[0m[0m
+[90m9:34PM[0m [31mERR[0m [1mExec failed "/usr/local/bin/kubectl exec --context default -it -n arc arc-actions-runner-controller-694f7b7dc5-4w26x -c manager -- sh -c command -v bash >/dev/null && exec bash || exec sh": exit status 1
+[0m [36merror=[0m[31m[1m"exit status 1\n"[0m[0m
+[90m9:34PM[0m [31mERR[0m [1mShell exec failed: exit status 1
+[0m [36merror=[0m[31m[1m"exit status 1\n"[0m[0m
+[90m9:40PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:40PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:40PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for excalidraw/excalidraw-6f6cdbc467-ltwgz (excalidraw)"[0m[0m
+[90m9:40PM[0m [31mERR[0m [1mno port-forward defined[0m
+[90m9:41PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for excalidraw/excalidraw-6f6cdbc467-ltwgz (excalidraw)"[0m[0m
+[90m9:42PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:42PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:42PM[0m [31mERR[0m [1mCommand failed[0m [36merror=[0m[31m[1m"exit status 1"[0m[0m
+[90m9:42PM[0m [31mERR[0m [1mExec failed "dive docker.io/actualbudget/actual-server:24.2.0-alpine": exit status 1
+[0m [36merror=[0m[31m[1m"exit status 1\n"[0m[0m
+[90m9:42PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:42PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:43PM[0m [31mERR[0m [1mWatcher failed for containers -- pods "buget-55c7bc465-tpqlc" not found[0m [36merror=[0m[31m[1m"pods \"buget-55c7bc465-tpqlc\" not found"[0m[0m
+[90m9:44PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for excalidraw/excalidraw-6f6cdbc467-ltwgz (excalidraw)"[0m[0m

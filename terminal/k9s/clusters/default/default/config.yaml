@@ -1,13 +1,15 @@
 k9s:
   cluster: default
+  skin: catppuccin-mocha-transparent
   namespace:
-    active: argocd
+    active: all
     lockFavorites: false
     favorites:
+    - all
     - argocd
     - default
   view:
-    active: secret
+    active: pod
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

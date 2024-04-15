@@ -1,5 +1,5 @@
 k9s:
-  liveViewAutoRefresh: false
+  liveViewAutoRefresh: true 
   screenDumpDir: /Users/joe/Library/Application Support/k9s/screen-dumps
   refreshRate: 2
   maxConnRetry: 5
@@ -13,7 +13,7 @@ k9s:
     reactive: false
     noIcons: false
     defaultsToFullScreen: false
-    skin: catppuccin-macchiato-transparent.yaml
+    # skin: catppuccin-macchiato-transparent.yaml
   skipLatestRevCheck: false
   disablePodCounting: false
   shellPod:
@@ -23,7 +23,7 @@ k9s:
       cpu: 100m
       memory: 100Mi
   imageScans:
-    enable: false
+    enable: true 
     exclusions:
       namespaces: []
       labels: {}
