@@ -8,25 +8,14 @@ export KUBE_EDITOR="nvim"
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 eval "$(starship init zsh)"
-eval "$(github-copilot-cli alias -- "$0")"
 
 autoload -U +X compinit && compinit
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
-# ZSH_THEME="robbyrussell"
+source <(kubectl completion zsh)
+compdef kubecolor=kubectl
+command -v kubecolor >/dev/null 2>&1 && alias kubectl="kubecolor"
 
-# # =======================================
-# plugins=(
-# 	git
-# 	oc
-#   kubectl	
-#   starship
-#  	zsh-syntax-highlighting
-#  	zsh-autosuggestions
-#  	zsh-completions
-# )
-#
-# =======================================
 alias brew='arch -arm64 brew install'
 alias cp='cp -v -i'
 alias rm='rm -i'
@@ -175,6 +164,18 @@ gwi() {
         fi
     fi
 }
+
+k_sh() {
+  local namespace pod
+  namespace_pod=$(kubectl get pods --all-namespaces --no-headers | fzf +m --header="Select a Pod:" | awk '{print $1, $2}')
+  if [ -n "$namespace_pod" ]; then
+    read -r namespace pod <<< "$namespace_pod"
+    kubectl exec -it -n "$namespace" "$pod" -- /bin/sh
+  else
+    echo "No pod selected or no pods available."
+  fi
+}
+
 
 pods(){
   kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{.metadata.namespace} {.metadata.name}{"\n"}' | \

@@ -296,3 +296,53 @@
 [90m9:42PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
 [90m9:43PM[0m [31mERR[0m [1mWatcher failed for containers -- pods "buget-55c7bc465-tpqlc" not found[0m [36merror=[0m[31m[1m"pods \"buget-55c7bc465-tpqlc\" not found"[0m[0m
 [90m9:44PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for excalidraw/excalidraw-6f6cdbc467-ltwgz (excalidraw)"[0m[0m
+[90m9:44PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:44PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m9:46PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:47PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m4:54AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m4:54AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m8:18AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m8:18AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m8:32AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m8:32AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m10:19AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m10:19AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m10:31AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m10:31AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m10:31AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": http2: client connection lost"[0m[0m
+[90m10:31AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m12:06PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:40PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m12:40PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m12:59PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m12:59PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m1:00PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m1:00PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m1:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m1:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m1:07PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m1:07PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m1:43PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m1:43PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m2:27PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m2:27PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m4:35PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m4:35PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m7:13PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m7:13PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m8:09PM[0m [33mWRN[0m [1m  Dial Failed![0m [36merror=[0m[31m[1m"Post \"https://192.168.1.101:6443/apis/authorization.k8s.io/v1/selfsubjectaccessreviews\": context deadline exceeded"[0m[0m
+[90m8:09PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m8:09PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m8:09PM[0m [33mWRN[0m [1mreconciler exited[0m [36merror=[0m[31m[1m"context canceled"[0m[0m
+[90m8:16PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m8:16PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m8:17PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": http2: client connection lost"[0m[0m
+[90m8:17PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
+[90m8:17PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": dial tcp 192.168.1.101:6443: connect: network is unreachable"[0m[0m
+[90m8:17PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (3/5)"[0m[0m
+[90m8:17PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": dial tcp 192.168.1.101:6443: connect: network is unreachable"[0m[0m
+[90m8:17PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
+[90m8:17PM[0m [33mWRN[0m [1mnamespace validation failed for: "argocd"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m8:17PM[0m [33mWRN[0m [1mnamespace validation failed for: "default"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
