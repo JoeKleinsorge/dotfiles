@@ -11,8 +11,6 @@ eval "$(starship init zsh)"
 
 autoload -U +X compinit && compinit
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
-
-source <(kubectl completion zsh)
 compdef kubecolor=kubectl
 command -v kubecolor >/dev/null 2>&1 && alias kubectl="kubecolor"
 
