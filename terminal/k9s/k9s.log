@@ -346,3 +346,23 @@
 [90m8:17PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (4/5)"[0m[0m
 [90m8:17PM[0m [33mWRN[0m [1mnamespace validation failed for: "argocd"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
 [90m8:17PM[0m [33mWRN[0m [1mnamespace validation failed for: "default"[0m [36merror=[0m[31m[1m"user not authorized to list all namespaces"[0m[0m
+[90m9:56PM[0m [32mINF[0m [1m🐶 K9s starting up...[0m
+[90m9:56PM[0m [32mINF[0m [1m✅ Kubernetes connectivity[0m
+[90m10:36PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for freshrss/freshrss-67754c486f-j7j4z (freshrss)"[0m[0m
+[90m10:37PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for freshrss/freshrss-67754c486f-j7j4z (freshrss)"[0m[0m
+[90m10:37PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for freshrss/freshrss-67754c486f-j7j4z (freshrss)"[0m[0m
+[90m10:50PM[0m [33mWRN[0m [1mlog-reader EOF[0m [36merror=[0m[31m[1m"Stream closed EOF for freshrss/freshrss-5cdc79dbd7-s4j99 (freshrss)"[0m[0m
+[90m10:57PM[0m [31mERR[0m [1mreconcile failed "v1/pods"[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/api/v1/namespaces/freshrss/pods/freshrss-5cdc79dbd7-s4j99\": dial tcp 192.168.1.101:6443: connect: connection refused"[0m[0m
+[90m10:57PM[0m [31mERR[0m [1mreconcile failed "v1/pods"[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/api/v1/namespaces/freshrss/pods/freshrss-5cdc79dbd7-s4j99\": dial tcp 192.168.1.101:6443: connect: connection refused"[0m[0m
+[90m10:57PM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": dial tcp 192.168.1.101:6443: connect: connection refused"[0m[0m
+[90m10:57PM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m7:47AM[0m [33mWRN[0m [1m  Dial Failed![0m [36merror=[0m[31m[1m"Post \"https://192.168.1.101:6443/apis/authorization.k8s.io/v1/selfsubjectaccessreviews\": context deadline exceeded"[0m[0m
+[90m7:47AM[0m [31mERR[0m [1munable to get pods count for metal1[0m [36merror=[0m[31m[1m"Post \"https://192.168.1.101:6443/apis/authorization.k8s.io/v1/selfsubjectaccessreviews\": context deadline exceeded"[0m[0m
+[90m7:47AM[0m [31mERR[0m [1munable to get pods count for metal2[0m [36merror=[0m[31m[1m"[list] access denied on resource \"\":\"v1/pods\""[0m[0m
+[90m7:47AM[0m [31mERR[0m [1munable to get pods count for metal3[0m [36merror=[0m[31m[1m"[list] access denied on resource \"\":\"v1/pods\""[0m[0m
+[90m7:47AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"client rate limiter Wait returned an error: context deadline exceeded - error from a previous attempt: read tcp 192.168.2.50:65049->192.168.1.101:6443: read: connection reset by peer"[0m[0m
+[90m7:47AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m8:06AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"[0m[0m
+[90m8:06AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (1/5)"[0m[0m
+[90m8:07AM[0m [31mERR[0m [1mcan't connect to cluster[0m [36merror=[0m[31m[1m"Get \"https://192.168.1.101:6443/version?timeout=15s\": http2: client connection lost"[0m[0m
+[90m8:07AM[0m [31mERR[0m [1mClusterUpdater failed[0m [36merror=[0m[31m[1m"conn check failed (2/5)"[0m[0m
