@@ -1,6 +1,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/node@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="$HOME/.emacs.d/bin:$PATH"
 export EDITOR="nvim"
 export KUBE_EDITOR="nvim"
 
