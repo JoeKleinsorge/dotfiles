@@ -53,9 +53,9 @@ keymap("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 keymap("n", "Q", "<nop>")
 
 --gen
-keymap({ 'n', 'v' }, '<leader>m', ':Gen<CR>')
-keymap('v', '<leader>ms', ':Gen Enhance_Grammar_Spelling<CR>')
-
+-- keymap({ 'n', 'v' }, '<leader>m', ':Gen<CR>')
+-- keymap('v', '<leader>ms', ':Gen Enhance_Grammar_Spelling<CR>')
+--
 
 --harpoon
 -- local mark = require("harpoon.mark")

@@ -14,6 +14,8 @@ local M = {
 	"rebelot/kanagawa.nvim",
 	config = function()
 		require("kanagawa").load("dragon")
+    -- require("kanagawa").load("wave")
+    -- require("kanagawa").load("lotus")
 		vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 		vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 	end,

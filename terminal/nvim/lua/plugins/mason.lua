@@ -18,11 +18,7 @@ M.servers = {
 }
 
 function M.config()
-  require("mason").setup {
-    ui = {
-      border = "rounded",
-    },
-  }
+  require("mason").setup {}
   require("mason-lspconfig").setup {
     ensure_installed = M.servers,
   }

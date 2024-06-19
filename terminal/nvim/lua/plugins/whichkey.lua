@@ -12,23 +12,23 @@ function M.config()
 		["e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
 		["b"] = { "<cmd>Telescope buffers previewer=false<cr>", "Find Buffer" },
 		-- ["a"] = { "harpoon.mark.add_file" },
-		d = {
-			name = "Debug",
-			t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
-			b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
-			c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
-			C = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run To Cursor" },
-			d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
-			g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
-			i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
-			o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
-			u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
-			p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
-			r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
-			s = { "<cmd>lua require'dap'.continue()<cr>", "Start" },
-			q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
-			U = { "<cmd>lua require'dapui'.toggle({reset = true})<cr>", "Toggle UI" },
-		},
+		-- d = {
+		-- 	name = "Debug",
+		-- 	t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+		-- 	b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
+		-- 	c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
+		-- 	C = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run To Cursor" },
+		-- 	d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
+		-- 	g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
+		-- 	i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
+		-- 	o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
+		-- 	u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
+		-- 	p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
+		-- 	r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
+		-- 	s = { "<cmd>lua require'dap'.continue()<cr>", "Start" },
+		-- 	q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
+		-- 	U = { "<cmd>lua require'dapui'.toggle({reset = true})<cr>", "Toggle UI" },
+		-- },
 		p = {
 			name = "Plugins",
 			i = { "<cmd>Lazy install<cr>", "Install" },
@@ -60,21 +60,21 @@ function M.config()
 			t = { "<cmd>TodoTelescope<cr>", "ToDo" },
 		},
 
-		g = {
-			name = "Git",
-			g = { "<cmd>Neogit<cr>", "Neogit" },
-	   	o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
-			b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-			c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
-			C = {
-				"<cmd>Telescope git_bcommits<cr>",
-				"Checkout commit(for current file)",
-			},
-			d = { "<cmd>DiffviewOpen<cr>", "Diffview" },
-      D = { "<cmd>DiffviewClose<cr>", "Diffview Close" },
-      f = { "<cmd>Telescope git_files<cr>", "Find file" },
-		},
-
+		-- g = {
+		-- 	name = "Git",
+		-- 	g = { "<cmd>Neogit<cr>", "Neogit" },
+	 --   	o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
+		-- 	b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+		-- 	c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
+		-- 	C = {
+		-- 		"<cmd>Telescope git_bcommits<cr>",
+		-- 		"Checkout commit(for current file)",
+		-- 	},
+		-- 	d = { "<cmd>DiffviewOpen<cr>", "Diffview" },
+  --     D = { "<cmd>DiffviewClose<cr>", "Diffview Close" },
+  --     f = { "<cmd>Telescope git_files<cr>", "Find file" },
+		-- },
+		--
 		l = {
 			name = "LSP",
 			a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
@@ -108,10 +108,10 @@ function M.config()
 			f = { "<cmd>lua require 'notes'.find_note()<cr>", "Find Note" },
 			s = { "<cmd>lua require 'notes'.search_notes()<cr>", "Search Notes" },
 		},
-    u = {
-      name = "Undo Tree",
-      u = { "<cmd>UndotreeToggle<cr>", "Toggle" },
-    },
+    -- u = {
+    --   name = "Undo Tree",
+    --   u = { "<cmd>UndotreeToggle<cr>", "Toggle" },
+    -- },
 
 
 		-- h = {
