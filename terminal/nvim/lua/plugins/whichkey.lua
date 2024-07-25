@@ -11,26 +11,8 @@ function M.config()
 		["c"] = { "<cmd>bdelete<CR>", "Close Buffer" },
 		["e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
 		["b"] = { "<cmd>Telescope buffers previewer=false<cr>", "Find Buffer" },
-    ["z"] = { "<cmd>ZenMode<CR>", "Zen Mode" },
-		-- ["a"] = { "harpoon.mark.add_file" },
-		-- d = {
-		-- 	name = "Debug",
-		-- 	t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
-		-- 	b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
-		-- 	c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
-		-- 	C = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run To Cursor" },
-		-- 	d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
-		-- 	g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
-		-- 	i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
-		-- 	o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
-		-- 	u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
-		-- 	p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
-		-- 	r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
-		-- 	s = { "<cmd>lua require'dap'.continue()<cr>", "Start" },
-		-- 	q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
-		-- 	U = { "<cmd>lua require'dapui'.toggle({reset = true})<cr>", "Toggle UI" },
-		-- },
-		p = {
+    ["m"] = { "<cmd>ZenMode<CR>", "Zen Mode" },
+			p = {
 			name = "Plugins",
 			i = { "<cmd>Lazy install<cr>", "Install" },
 			s = { "<cmd>Lazy sync<cr>", "Sync" },
@@ -41,7 +23,6 @@ function M.config()
 			l = { "<cmd>Lazy log<cr>", "Log" },
 			d = { "<cmd>Lazy debug<cr>", "Debug" },
 		},
-
 		f = {
 			name = "Find",
 			b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
@@ -60,22 +41,6 @@ function M.config()
 			C = { "<cmd>Telescope commands<cr>", "Commands" },
 			t = { "<cmd>TodoTelescope<cr>", "ToDo" },
 		},
-
-		-- g = {
-		-- 	name = "Git",
-		-- 	g = { "<cmd>Neogit<cr>", "Neogit" },
-	 --   	o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
-		-- 	b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-		-- 	c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
-		-- 	C = {
-		-- 		"<cmd>Telescope git_bcommits<cr>",
-		-- 		"Checkout commit(for current file)",
-		-- 	},
-		-- 	d = { "<cmd>DiffviewOpen<cr>", "Diffview" },
-  --     D = { "<cmd>DiffviewClose<cr>", "Diffview Close" },
-  --     f = { "<cmd>Telescope git_files<cr>", "Find file" },
-		-- },
-		--
 		l = {
 			name = "LSP",
 			a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
@@ -104,32 +69,12 @@ function M.config()
 		},
 		n = {
 			name = "Notes",
-			l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
+			l = { "<cmd>lua require 'notes'.last_note()<cr>", "Last Note"},
 			n = { "<cmd>lua require 'notes'.new_note()<cr>", "New Note" },
 			f = { "<cmd>lua require 'notes'.find_note()<cr>", "Find Note" },
 			s = { "<cmd>lua require 'notes'.search_notes()<cr>", "Search Notes" },
 		},
-    -- u = {
-    --   name = "Undo Tree",
-    --   u = { "<cmd>UndotreeToggle<cr>", "Toggle" },
-    -- },
-
-
-		-- h = {
-		-- 	name = "Harpoon",
-		-- 	m = { "Mark file", ":lua require('harpoon.mark').add_file()<CR>" },
-		-- 	v = { "View project marks", ":lua require('harpoon.ui').toggle_quick_menu()<CR>" },
-		-- 	n = { "Next mark", ":lua require('harpoon.ui').nav_next()<CR>" },
-		-- 	p = { "Previous mark", ":lua require('harpoon.ui').nav_prev()<CR>" },
-		-- },
-		-- t = {
-		-- 	name = "Terminal Navigation",
-		-- 	n = { "Create a new terminal", ":lua require('harpoon.term').make_term()<CR>" }, -- Create a new terminal
-		-- 	t1 = { "Navigate to terminal 1", ":lua require('harpoon.term').gotoTerminal(1)<CR>" },
-		-- 	t2 = { "Navigate to terminal 2", ":lua require('harpoon.term').gotoTerminal(2)<CR>" },
-		-- 	t3 = { "Navigate to terminal 3", ":lua require('harpoon.term').gotoTerminal(3)<CR>" },
-		-- },
-	}
+  }
 
 	local opts = {
 		mode = "n", -- NORMAL mode
