@@ -1,17 +1,12 @@
 k9s:
-  cluster: default
-  skin: catppuccin-mocha-transparent
+  cluster: k3d-kubefirst-console
   namespace:
-    active: all
+    active: default
     lockFavorites: false
     favorites:
-    - all
-    - argocd
-    - plex
-    - frigate
     - default
   view:
-    active: pod
+    active: po
   featureGates:
     nodeShell: false
   portForwardAddress: localhost
