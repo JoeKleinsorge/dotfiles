@@ -105,6 +105,7 @@ function M.config()
 	local which_key = require("which-key")
 
 	which_key.setup({
+    notify = false,
 		plugins = {
 			marks = false, -- shows a list of your marks on ' and `
 			registers = false, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
